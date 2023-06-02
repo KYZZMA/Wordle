@@ -44,7 +44,7 @@ public class WordleGame {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String s;
             while ((s = br.readLine()) != null) {
-                String[] split = s.split(" ");
+                String[] split = s.split("\n");
                 list.addAll(Arrays.asList(split));
             }
         } catch (IOException ex) {
